@@ -1,0 +1,41 @@
+@import "../desktop/variable";
+
+@media(max-width:699px){
+  #services{
+    .gridSection{
+      .gridBox{
+        svg{
+          position: absolute;
+          top: -20%;
+          left: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:354px){
+  #services{
+    .gridSection{
+      grid-template-columns: minmax(1rem,28rem);
+    }
+  }
+}
+@media(max-width:426px){
+  #services{
+    .gridSection{
+      .gridBox{
+        svg{
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media(max-width:312px){
+  #services{
+    .gridSection{
+      grid-template-rows: minmax(1rem,28rem);
+    }
+  }
+}

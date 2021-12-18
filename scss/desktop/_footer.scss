@@ -1,0 +1,45 @@
+
+@import "variable";
+
+footer{
+
+  background-color: $dark;
+  padding: 3rem;
+
+  .logo{
+    width: 7rem;
+    margin: auto;
+    padding: 1rem 1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .socialLinks{
+    width: fit-content;
+    margin: auto;
+    padding: 2rem 0rem;
+    a{
+      text-decoration: none;
+      i{
+        color: $pure;
+        margin-left: 1rem;
+        transition: $smoothing;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+  }
+  span{
+    margin: auto;
+    width: fit-content;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: $pure;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    color: $ternary;
+  }
+}
+

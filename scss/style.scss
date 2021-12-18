@@ -1,0 +1,47 @@
+
+//imports
+@import "./desktop/header";
+@import "./desktop/about";
+@import "./desktop/services";
+@import "./desktop/clients";
+@import "./desktop/works";
+@import "./desktop/blog";
+@import "./desktop/contact";
+@import "./desktop/footer";
+@import "./desktop/variable";
+@import "./desktop/testomials";
+@import "./responsive/aboutRes";
+@import "./responsive/blogRes";
+@import "./responsive/clientsRes";
+@import "./responsive/contactRes";
+@import "./responsive/headerRes";
+@import "./responsive/servicesRes";
+@import "./responsive/testomialsRes";
+@import "./responsive/worksRes";
+
+
+//reset
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+// root set
+:root{
+  font-size: 62.5%;
+}
+
+// default selection design
+::selection{
+  background-color: orange;
+  color: $pure;
+}
+
+// placeholder designing
+::placeholder{
+  padding-left: 3rem;
+  padding-top: 0.3rem;
+}

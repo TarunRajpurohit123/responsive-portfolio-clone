@@ -1,0 +1,133 @@
+@import "variable";
+
+.contact{
+
+  padding: 5rem 0rem;
+
+   // top of contact section designing
+   .headContact{
+
+    width: 100%;
+    margin: auto;
+    text-transform: capitalize;
+    text-align: center;
+
+    h1{
+      text-transform: capitalize;
+      font-size: 3rem;
+      &::after{
+        content: "Us";
+        font-size: 3rem;
+        color: $primary;
+        margin-left: 1rem;
+      }
+    }
+
+    p{
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      padding: 1rem;
+     }
+
+  }
+
+  //container
+  .container{
+
+     padding:3rem 0rem;
+     width: 80%;
+     margin: auto;
+
+    //  iconContainer
+     .contactIcons{
+
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       width: 90%;
+       margin: auto;
+       text-align: center;
+
+      //  icon
+       i{
+         cursor: pointer;
+         transition: $smoothing;
+         &:hover{
+           color: $primary;
+         }
+       }
+
+      //  text below icons
+       .texter{
+         margin-top: 2rem;
+         text-transform: capitalize;
+         span{
+           display: block;
+           margin-top: 1rem;
+           font-size: 1.3rem;
+           color: $ternary;
+         }
+       }
+     }
+
+    //  contact form
+     form{
+
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       justify-content: space-between;
+       padding: 1.2rem;
+       padding-top: 2rem;
+       width: 92%;
+       margin: auto;
+
+       .userName{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         width: 100%;
+         input{
+           width: 49%;
+           height: 3rem;
+         }
+       }
+
+       .userEmail{
+         display: flex;
+         margin-top: 1rem;
+         width: 100%;
+         input{
+           flex: 1;
+           height: 3rem;
+         }
+       }
+
+      //  textarea
+       .textContainer{
+        margin-top: 1rem;
+        display: flex;
+        width: 100%;
+        textarea{
+          flex: 1;
+          height: 10rem;
+        }
+      }
+
+      // submit button
+      button{
+        width: 12rem;
+        padding: 0.5rem 0.3rem;
+        margin: auto;
+        margin-top: 2rem;
+        cursor: pointer;
+        background-color: $primary;
+        border: none;
+        font-weight: bolder;
+      }
+      
+     }
+
+  }
+
+}

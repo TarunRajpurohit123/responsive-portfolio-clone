@@ -1,0 +1,15 @@
+@import "../desktop/variable";
+
+@media(max-width:1009px){
+  #parallex{
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+    h1{
+      text-align: center;
+      padding: 1rem;
+    }
+    p{
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}

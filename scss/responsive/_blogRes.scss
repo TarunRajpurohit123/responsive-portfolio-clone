@@ -1,0 +1,19 @@
+@import "../desktop/variable";
+
+@media(max-width:738px){
+  .blog{
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+  }
+}
+@media(max-width:400px){
+  .blog{
+    .gridContainer{
+      grid-template-columns: minmax(5rem,30rem);
+      .card{
+        margin: auto;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,43 @@
+@import "../desktop/variable";
+
+@media(max-width:1009px){
+
+  header{
+    nav{
+      .container{
+        .left{
+          ul{
+            display: none;
+          }
+        }
+        #btn{
+          display: none;
+        }
+        #ham{
+          display: block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}
+
+@media(max-width:1142px){
+  header{
+    padding-bottom: 4rem;
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,100% 100%,0% 100%);
+    .containerHero{
+      .hero{
+        .leftHeader{
+          margin:2rem auto;
+        }
+        .rightHeader{
+          width: fit-content;
+          margin: auto;
+          padding-top: 0rem;
+        }
+      }
+    }
+  }
+}

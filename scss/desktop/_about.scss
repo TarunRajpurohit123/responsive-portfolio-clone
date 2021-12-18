@@ -1,0 +1,64 @@
+@import "variable";
+
+#about{
+
+  //container
+  .container{
+
+     width: 80%;
+     margin: auto;
+     padding: 10rem 0rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+
+    //  left part of about
+     .leftAbout{
+       width: 35%;
+       img{
+         width: 100%;
+       }
+     }
+
+    //  right part of about
+     .rightAbout{
+       padding-top: 3rem;
+       width: 55%;
+       h1{
+         text-transform: capitalize;
+         font-size: 3rem;
+         &::after{
+           content: "Me";
+           font-size: 3rem;
+           color: $primary;
+           margin-left: 1rem;
+         }
+       }
+       h3{
+        text-transform: capitalize;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+       }
+       p{
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        width: 65%;
+       }
+       .socialLinks{
+         margin-top: 2rem;
+         a{
+           margin-left: 0.5rem;
+           text-decoration: none;
+           i{
+             color: $dark;
+             transition: $smoothing;
+             &:hover{
+               color: $primary;
+             }
+           }
+         }
+       }
+     }
+
+  }
+}

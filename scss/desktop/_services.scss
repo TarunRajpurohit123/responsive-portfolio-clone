@@ -1,0 +1,90 @@
+@import "variable";
+
+#services{
+
+  background-color: $light;
+  padding: 8rem 0rem;
+
+  // top of Services
+  .headService{
+
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    h1{
+      font-size: 3rem;
+      text-transform: capitalize;
+      width: 100%;
+      &::before{
+        content: "Our";
+        font-size: 3rem;
+        color: $primary;
+        margin-right: 1rem;
+      }
+    }
+
+    p{
+      font-size: 1.4rem;
+      margin-top: 1rem;
+     }
+
+  }
+
+  // Gridbox
+  .gridSection{
+
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2,20rem);
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    grid-template-rows: 20rem;
+    grid-gap: 5rem;
+
+    .gridBox{
+
+      cursor: pointer;
+      text-align: center;
+      padding: 5rem 2rem;
+      background-color: $light;
+      box-shadow: 5px 5px 10px 3px $ternary;
+      position: relative;
+      transition: $smoothing;
+
+      // hover effect
+      &:hover{
+        color: $pure;
+        background-color: $dark;
+      }
+
+      svg{
+        position: absolute;
+        top: -20%;
+        left: 33%;
+      }
+
+      // for article tag
+      article{
+
+        h1{
+          font-size: 1.5rem;
+          text-transform: capitalize;
+        }
+
+        p{
+          font-size: 1.3rem;
+          margin-top: 1rem;
+          line-height: 1.8rem;
+        }
+        
+      }
+
+    }
+
+  }
+
+}
+

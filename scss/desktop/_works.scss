@@ -1,0 +1,66 @@
+@import "variable";
+
+.work{
+
+  background-color: $light;
+  padding: 7rem 0rem;
+
+  // top of work section designing
+  .headWork{
+
+    width: 100%;
+    margin: auto;
+    text-transform: capitalize;
+    text-align: center;
+
+    h1{
+      text-transform: capitalize;
+      font-size: 3rem;
+      &::before{
+        content: "Our";
+        font-size: 3rem;
+        color: $primary;
+        margin-right: 1rem;
+      }
+    }
+
+    p{
+      font-size: 1.4rem;
+      margin-top: 1rem;
+     }
+
+  }
+
+  .gridContainer{
+
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 2rem;
+
+    // imageContainerStart
+    figure{
+
+      width: 100%;
+      overflow: hidden;
+      cursor: pointer;
+
+      img{
+
+        width: 100%;
+        transform: scale(1);
+        object-fit: cover;
+        transition: $smoothing;
+
+        &:hover{
+         transform: scale(1.1);
+        }
+      }
+
+    }
+  }
+
+}

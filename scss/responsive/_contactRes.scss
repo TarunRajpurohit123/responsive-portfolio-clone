@@ -1,0 +1,32 @@
+@import "../desktop/variable";
+
+@media(max-width:719px){
+  .contact{
+    .container{
+      form{
+        .userName{
+          flex-direction: column;
+          input{
+            width: 100%;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:594px){
+  .contact{
+    .container{
+      padding: 1rem 0rem;
+      .contactIcons{
+        flex-direction: column;
+        i{
+          margin-top: 2rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

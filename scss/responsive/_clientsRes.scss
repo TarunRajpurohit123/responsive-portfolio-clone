@@ -1,0 +1,28 @@
+@import "../desktop/variable";
+
+@media(max-width:862px){
+  .clients{
+    height: 60rem;
+  }
+}
+
+@media(max-width:744px){
+  .clients{
+    height: 60rem;
+    .container{
+      .slider{
+        .slides{
+          p{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:360px){
+  .clients{
+    height: 67rem;
+  }
+}

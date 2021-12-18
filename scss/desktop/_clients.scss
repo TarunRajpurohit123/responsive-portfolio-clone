@@ -1,0 +1,116 @@
+@import "variable";
+
+.clients{
+
+   padding: 5rem 0rem;
+   height: 50rem;
+
+    // top of Clients
+    .headClients{
+
+      width: 100%;
+      margin: auto;
+      text-transform: capitalize;
+      text-align: center;
+  
+      h1{
+        text-transform: capitalize;
+        font-size: 3rem;
+        &::before{
+          content: "Our";
+          font-size: 3rem;
+          color: $primary;
+          margin-right: 1rem;
+        }
+      }
+  
+      p{
+        font-size: 1.4rem;
+        margin-top: 1rem;
+       }
+  
+    }
+
+    .container{
+
+      width: 60%;
+      padding: 3rem 0rem;
+      margin: auto;
+      position: relative;
+
+      // slider designing
+      .slider{
+
+        // slides designing
+        .slides{
+
+          position: absolute;
+          background-color: $pure;
+          top: 0%;
+          left: 0%;
+          opacity: 0;
+          transition: $smoothing;
+
+          .sliderButtons{
+
+             width: fit-content;
+             margin: 2rem auto;
+
+             a{
+               border: 1px solid $dark;
+               margin-left: 0.5rem;
+               padding: 0.5rem;
+               border-radius: 100%;
+               background-color: $primary;
+               text-decoration: none;
+               font-weight: bold;
+               transition: $smoothing;
+     
+               &:hover{
+                 background-color: $dark;
+                 color:$light;
+               }
+             }
+
+          }
+
+          &:target{
+            opacity: 1;
+          }
+
+          figure{
+            width:fit-content;
+            margin: auto;
+            margin-top: 2rem;
+          }
+
+          p{
+            width: 60%;
+            text-align: justify;
+            margin: auto;
+            font-size: 1.3rem;
+            margin-top: 2rem;
+          }
+
+          span{
+            display: block;
+            width: fit-content;
+            margin: auto;
+            margin-top: 2rem;
+            font-size: 1.6rem;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace;
+          }
+
+        }
+
+        // slide 1
+        .slide1{
+          opacity: 1;
+        }
+
+      }
+
+    }
+
+}

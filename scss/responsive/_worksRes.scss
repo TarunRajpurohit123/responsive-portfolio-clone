@@ -1,0 +1,10 @@
+@import "../desktop/variable";
+
+@media(max-width:400px){
+  .work{
+    .gridContainer{
+      grid-template-columns: minmax(5rem,30rem);
+    }
+  }
+}
+

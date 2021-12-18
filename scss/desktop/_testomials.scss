@@ -1,0 +1,51 @@
+@import "variable";
+
+//testomial designing
+.testnomials{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(7, 7, 7, 0.719),rgba(3, 3, 3, 0.719)), url("../images/camera.png");
+  background-repeat: none;
+  background-size: cover;
+  height: 50vh;
+  background-attachment: fixed;
+  line-height: 4rem;
+  clip-path: polygon(0% 0%,100% 0%,100% 100%,80% 80%,0% 100%);
+
+  // heading
+  h1{
+    color: $light;
+    text-transform: capitalize;
+    font-size: 3rem;
+  }
+
+  p{
+      color: $light;
+      font-size: 1.5rem;
+  }
+
+  // button
+  #btn2{
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    width: 15rem;
+    background-color: $primary;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: $smoothing;
+
+    &:hover{
+     color:$primary;
+     background-color: $dark;
+     border: 2px solid $primary;
+   }
+
+  }
+
+}
